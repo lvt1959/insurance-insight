@@ -424,7 +424,7 @@ if df is not None:
                 feat_imp_df = pd.DataFrame({
                     'Feature': features,
                     'Importance': importances
-                }).sort_values('Importance', ascending=True).tail(7)  # On affiche les 6 plus importantes
+                }).sort_values('Importance', ascending=True)
 
                 fig_imp = px.bar(feat_imp_df, x='Importance', y='Feature', orientation='h',
                                  color_discrete_sequence=['#d97757'])
