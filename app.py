@@ -191,7 +191,7 @@ def stream_chat_text(title, text):
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("insurance.csv")
+        df = pd.read_csv("insurance_cleaned.csv")
         with open("metadata.json", "r", encoding="utf-8") as f:
             meta = json.load(f)
         return df, meta
