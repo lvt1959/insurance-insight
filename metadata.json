@@ -1,0 +1,25 @@
+{
+  "dataset_info": {
+    "name": "Medical Insurance Cost Dataset",
+    "source": "https://www.kaggle.com/datasets/mirichoi0218/insurance",
+    "description": "Ce dataset contient des données sur les coûts des soins de santé individuels aux États-Unis, basées sur des caractéristiques démographiques et comportementales.",
+    "version": "1.0",
+    "last_update": "2024-05-22"
+  },
+  "features_definition": {
+    "age": "Âge du bénéficiaire principal (numérique).",
+    "sex": "Genre du bénéficiaire (catégoriel: female, male).",
+    "bmi": "Indice de masse corporelle (numérique, kg/m²). L'idéal se situe entre 18.5 et 24.9.",
+    "children": "Nombre d'enfants/personnes à charge couverts par l'assurance (numérique).",
+    "smoker": "Indique si le bénéficiaire fume régulièrement (catégoriel: yes, no).",
+    "region": "Zone résidentielle du bénéficiaire aux USA (catégoriel: northeast, southeast, southwest, northwest).",
+    "charges": "Variable cible - Coûts médicaux annuels facturés (numérique)."
+  },
+  "model_info": {
+    "algorithm": "Multiple Linear Regression",
+    "framework": "Scikit-Learn",
+    "preprocessing": "One-Hot Encoding pour les variables catégorielles",
+    "target_variable": "charges"
+  },
+  "license": "CC0: Public Domain"
+}
